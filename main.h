@@ -130,7 +130,7 @@ std::shared_ptr<Function> operator-(std::any a, std::any b){
 	} catch(const std::bad_any_cast& error) {
 		throw std::logic_error(error.what());
 	}
-	return std::make_shared<FunctionMultiply>(a,b);
+	return std::make_shared<FunctionMinus>(a,b);
 }	
 
 std::shared_ptr<Function> operator*(std::any a, std::any b){
